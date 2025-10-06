@@ -37,7 +37,7 @@ You only need a modern web browser (like Chrome, Firefox, or Edge).
 Installation
 Clone the repository:
 
-git clone [https://github.com/your-username/strike.git](https://github.com/your-username/strike.git)
+**git clone** https://github.com/Subhadipgayen2006/CoderArmy-strike-SubhadipGayen.git
 
 Navigate to the project directory:
 
