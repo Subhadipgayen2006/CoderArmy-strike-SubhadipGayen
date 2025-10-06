@@ -15,7 +15,7 @@ This project showcases strong proficiency in structuring complex content across 
 🔗 Deployment
 You can view the live, hosted version of the Strike project here:
 
-[Live Demo (Host Link)]([Insert Your Deployment URL Here])
+**Deployment link:-** https://coderarmy-hackathon-subhadipgayen.netlify.app/
 
 ✨ Features
 Fully Responsive Design: Built using a mobile-first approach, ensuring the layout and content adapt flawlessly to any screen size.
