@@ -1,20 +1,18 @@
-/* style.css */
 
-/* --- Font Imports (Simulated using fallback common web fonts) --- */
 :root {
-    /* Simulating custom fonts */
+    
     --font-display: 'Arial Black', sans-serif; 
     --font-body: 'Arial', sans-serif; 
     
-    /* Colors from the design */
-    --color-strike: #9333ea; /* Vibrant Purple */
-    --color-primary: #030007; /* Super Deep Black (Background) */
-    --color-secondary: #f3f4f6; /* Off-White (Text) */
+    
+    --color-strike: #9333ea; 
+    --color-primary: #030007; 
+    --color-secondary: #f3f4f6; 
     --color-card-bg: #1c191e;
-    --color-code-bg: #0d0c11; /* Darker box for the code preview */
+    --color-code-bg: #0d0c11; 
 }
 
-/* Global Reset and Base Styles */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +27,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Utility Classes */
+
 .text-center { text-align: center; }
 .max-width-container {
     max-width: 1200px;
@@ -40,7 +38,7 @@ body {
 .padding-y-sm { padding-top: 40px; padding-bottom: 40px; }
 
 
-/* --- Branding and Neon Effects --- */
+
 .logo a {
     font-family: var(--font-display);
     font-size: 1.5rem;
@@ -63,7 +61,7 @@ body {
         0 0 20px rgba(147, 51, 234, 0.2);
 }
 
-/* --- Header and Navigation (Desktop) --- */
+
 header {
     background-color: rgba(0, 0, 0, 0.9);
     border-bottom: 1px solid #333;
@@ -108,13 +106,13 @@ header {
     background-color: #7b24e6;
 }
 
-/* Hide mobile elements by default */
+
 .menu-toggle, .mobile-menu-overlay {
     display: none;
 }
 
 
-/* --- 1. HERO/HOME SECTION LAYOUT --- */
+
 .hero-section {
     display: flex;
     align-items: center;
@@ -165,7 +163,7 @@ header {
     transition: border-color 0.3s, color 0.3s;
 }
 
-/* Stats */
+
 .stats-container {
     display: flex;
     gap: 40px;
@@ -183,7 +181,7 @@ header {
 }
 
 
-/* --- 2. Code/Video Preview Box (Right Side) --- */
+
 .hero-right {
     flex: 1;
     display: flex;
@@ -240,7 +238,7 @@ header {
 }
 
 .code-window {
-    height: 250px; /* Space for the video/code */
+    height: 250px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,7 +256,6 @@ header {
     z-index: -1;
 }
 
-/* --- Course Card Styles (for courses.html) --- */
 .course-page-header h2 {
     font-size: 2.8rem;
     margin-bottom: 10px;
@@ -375,7 +372,6 @@ header {
     background-color: #7b24e6;
 }
 
-/* --- Login Page Specific Styling --- */
 .login-page {
     display: flex;
     justify-content: center;
@@ -426,7 +422,6 @@ header {
     cursor: pointer;
 }
 
-/* Footer */
 footer {
     padding: 20px 0;
     border-top: 1px solid #333;
@@ -436,12 +431,10 @@ footer {
 }
 
 
-/* ====================================================================== */
-/* --- 📱 MEDIA QUERIES FOR RESPONSIVENESS (Max Width 640px) --- */
-/* ====================================================================== */
+
 
 @media (max-width: 640px) {
-    /* --- Global Adjustments --- */
+    
     .max-width-container {
         padding: 0 15px; 
     }
@@ -450,7 +443,7 @@ footer {
         padding-bottom: 60px;
     }
 
-    /* --- Navigation Override (Mobile) --- */
+   
     .nav-container {
         flex-direction: row; 
         justify-content: space-between;
@@ -458,13 +451,12 @@ footer {
         gap: 0;
     }
     
-    /* Hide desktop navigation and login button on mobile */
     #desktopNav, 
     .nav-container > .login-btn {
         display: none !important;
     }
 
-    /* Show hamburger icon */
+    
     .menu-toggle {
         display: flex;
         flex-direction: column;
@@ -486,12 +478,12 @@ footer {
         transition: all 0.3s ease-in-out;
     }
 
-    /* --- Mobile Menu Overlay --- */
+    
     .mobile-menu-overlay {
         display: block;
         position: fixed;
         top: 0;
-        right: -100%; /* Initially hidden off-screen */
+        right: -100%; 
         width: 100%;
         height: 100%;
         background-color: rgba(3, 0, 7, 0.98); 
@@ -501,9 +493,9 @@ footer {
         text-align: center;
     }
     
-    /* State: Menu is Open */
+    
     .mobile-menu-overlay.is-open {
-        right: 0; /* Slide into view */
+        right: 0; 
     }
     
     .mobile-nav-links {
@@ -525,7 +517,7 @@ footer {
         border-bottom: none;
     }
     
-    /* --- Home Page (Hero Section) Adjustments --- */
+    
     .hero-section {
         flex-direction: column; 
         padding: 50px 15px;
@@ -580,7 +572,7 @@ footer {
         font-size: 2rem;
     }
 
-    /* --- Courses Page Adjustments --- */
+    
     .course-page-header h2 {
         font-size: 2rem;
     }
@@ -588,8 +580,9 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* --- Login Page Adjustments --- */
+    
     .login-form-box {
         max-width: 90%;
     }
+
 }
