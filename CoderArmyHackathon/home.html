@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIKE - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container max-width-container">
+            <div class="logo"><a href="home.html">STRIKE</a></div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav id="desktopNav">
+                <a href="home.html" class="active">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+
+            <a href="index.html" class="login-btn">Logout</a>
+        </div>
+    </header>
+    
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="index.html" class="login-btn" style="margin-top: 20px;">Logout</a>
+        </nav>
+    </div>
+
+
+    <section id="home" class="hero-section max-width-container">
+        
+        <div class="hero-left">
+            <h1>
+                Be a part of our <br>
+                <span class="purple-glow">FAMILY!</span>
+            </h1>
+            
+            <p>
+                A community of coders, making the world a better place. Learn, build, and grow with the best developers in the industry.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="courses.html" class="primary-btn">
+                    EXPLORE COURSES
+                </a>
+                <a href="#" class="secondary-btn">
+                    WATCH DEMO
+                </a>
+                
+            </div>
+
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <strong>202K+</strong>
+                    <span>Students</span>
+                </div>
+                <div class="stat-item">
+                    <strong>4+</strong>
+                    <span>Courses</span>
+                </div>
+                <div class="stat-item">
+                    <strong>2+</strong>
+                    <span>Experienced Instructors</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="code-preview-box">
+                <div class="code-header">
+                    <div class="code-header-traffic">
+                        <div class="red"></div>
+                        <div class="yellow"></div>
+                        <div class="green"></div>
+                    </div>
+                    <p style="color: white; font-weight: bold;">Coderarmy.cpp</p>
+                    <div class="live-status">
+                        <div class="live-dot"></div>
+                        Live Stream
+                    </div>
+                </div>
+
+                <div class="code-window">
+                    <video 
+                        class="background-video"
+                        src="coderarmy.mp4" 
+                        autoplay 
+                        loop 
+                        muted 
+                        playsinline 
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'p-8 text-center text-red-400\'>Error loading video file: 20251006-0510-47.0877252.mp4</div>'"
+                    ></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 STRIKE Academy. All rights reserved.
+    </footer>
+    
+</body>
+</html>
