@@ -1,4 +1,4 @@
-# 💥 Strike - Coder Army Hackathon Submission
+# 💥 Strike - Coder Army Hackathon
 <!--
 A strong README starts with a clear title, a brief description,
 and visual cues like badges.
